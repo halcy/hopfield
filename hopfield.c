@@ -235,7 +235,7 @@ int main(int argc, char** argv) {
 		}
 		else {
 			for(int iteration = 0; iteration < iterations; iteration++) {
-				run_network_iterations(net, net_state, iterations);
+				run_network_iterations(net, net_state, 1);
 				if(iteration != iterations - 1) {
 					printf("After iteration %d:\n", iteration);
 					show_pattern(net_state, x_size, y_size);
